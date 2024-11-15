@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta tags for character set and responsive design, link to external CSS -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Clock with Time Zone</title>
+  </head>
+  <body>
+    <!-- Clock display container -->
+    <div id="clock-container"></div>
+
+    <!-- Dropdown for selecting time zone -->
+    <label for="timezone-select" id="heading">Choose a Time Zone:</label>
+    <select id="timezone-select">
+      <option value="UTC">UTC</option>
+      <option value="America/New_York">New York (EST)</option>
+      <option value="Europe/London">London (GMT)</option>
+      <option value="Asia/Kolkata">India (IST)</option>
+      <option value="Australia/Sydney">Sydney (AEST)</option>
+    </select>
+
+    <!-- Color picker for changing clock color -->
+    <div id="color-container">
+      <p id="heading">Choose a clock color:</p>
+      <input type="color" id="color" />
+    </div>
+
+    <!-- Alarm setup section -->
+    <div id="alarm-container">
+      <p id="heading">Click to set alarm</p>
+      <input type="time" id="alarm" />
+      <button id="set-alarm">Set Alarm</button>
+    </div>
+
+    <!-- Button to toggle between 12-hour and 24-hour formats -->
+    <button id="toggle-format">Switch to 24-Hour Format</button>
+
+    <!-- Link to external JavaScript file -->
+    <script src="script.js"></script>
+  </body>
+</html>
